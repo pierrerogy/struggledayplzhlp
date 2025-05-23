@@ -8,8 +8,8 @@ data <-
   read.csv("data/dats.csv")
 
 # Plot the data
-ggplot(data, aes(x = lifeExp, y = gdpPercap)) +
-  geom_point() +
+ggplot(data, aes(x = lifeExp, y = gdpPercap),) +
+  geom_point(color="green") +
   geom_smooth(method = "lm", se = FALSE) +
   labs(title = "Scatter plot of life expectancy per GDP",
        x = "life expectancy",
