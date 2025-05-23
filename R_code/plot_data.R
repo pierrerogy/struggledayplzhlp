@@ -12,8 +12,8 @@ ggplot(data, aes(x = lifeExp, y = gdpPercap)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE) +
   labs(title = "Scatter plot of x and y",
-       x = "x",
-       y = "y") +
+       x = "life expectancy",
+       y = "GDP per capita") +
   theme_minimal()
 
 
